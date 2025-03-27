@@ -12,15 +12,16 @@ function loadEvent() {
     const links = text.split("\n")
     links.forEach(link => {
       link = link.trim();
-      if (link) continue;
-      const wrapper = document.createElement('div');
-      wrapper.classList.add('video-wrapper')
-      const iframe = document.createElement('iframe');
-      iframe.src = link;
-      iframe.setAttribute("allowfullscreen", true)
-
-      wrapper.appendChild(iframe);
-      contentsDiv.appendChild(wrapper);
+      if (link){
+        const wrapper = document.createElement('div');
+        wrapper.classList.add('video-wrapper')
+        const iframe = document.createElement('iframe');
+        iframe.src = link;
+        iframe.setAttribute("allowfullscreen", true)
+  
+        wrapper.appendChild(iframe);
+        contentsDiv.appendChild(wrapper);
+      }
     })
   });
 }
