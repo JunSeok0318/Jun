@@ -8,7 +8,7 @@ if (document.readyState === "loading") {
 
 function loadEvent() {
   const contentsDiv = document.getElementById("contents");
-  fetch("./link.txt").then(response => response.text).then(text => {
+  fetch("./link.txt").then(response => response.text()).then(text => {
     const links = text.split("\n")
     links.forEach(link => {
       link = link.trim();
