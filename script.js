@@ -11,7 +11,8 @@ function loadEvent() {
   fetch("./link.txt").then(response => response.text).then(text => {
     const links = text.split("\n")
     links.forEach(link => {
-
+      link = link.trim();
+      if (link) continue;
       const wrapper = document.createElement('div');
       wrapper.classList.add('video-wrapper')
       const iframe = document.createElement('iframe');
