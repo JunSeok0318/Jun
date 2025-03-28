@@ -47,6 +47,15 @@ header h1 {
   margin: 0 auto;
 }
 
+#contents2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .video-wrapper {
   background: white;
   border-radius: 10px;
@@ -158,7 +167,7 @@ h4 {
 }
 
 .split-vertical p {
-  margin: 10px auto;
+  margin: 10px;
 }
 
 .split-horizontal {
