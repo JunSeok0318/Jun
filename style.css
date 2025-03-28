@@ -186,3 +186,7 @@ div.align-center {
   height: 28px;
   border-radius: 5px;
 }
+
+.iframe-section iframe {
+  aspect-ratio: 16 / 9;
+}
